@@ -1,0 +1,939 @@
+{
+  "claude-sonnet-4-6": {
+    "n": 20,
+    "claim_status_accuracy": 0.65,
+    "per_field_accuracy": {
+      "evidence_standard_met": 0.8,
+      "risk_flags": 0.25,
+      "issue_type": 0.45,
+      "object_part": 0.85,
+      "claim_status": 0.65,
+      "supporting_image_ids": 0.7,
+      "valid_image": 0.85,
+      "severity": 0.25
+    },
+    "mismatches": [
+      {
+        "user_id": "user_001",
+        "image_paths": "images/sample/case_001/img_1.jpg",
+        "diffs": [
+          [
+            "risk_flags",
+            "none",
+            "claim_mismatch"
+          ],
+          [
+            "claim_status",
+            "supported",
+            "contradicted"
+          ],
+          [
+            "severity",
+            "medium",
+            "high"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_002",
+        "image_paths": "images/sample/case_002/img_1.jpg;images/sample/case_002/img_2.jpg",
+        "diffs": [
+          [
+            "evidence_standard_met",
+            "true",
+            false
+          ],
+          [
+            "risk_flags",
+            "none",
+            "claim_mismatch;wrong_object;possible_manipulation;manual_review_required"
+          ],
+          [
+            "claim_status",
+            "supported",
+            "not_enough_information"
+          ],
+          [
+            "supporting_image_ids",
+            "img_1",
+            "none"
+          ],
+          [
+            "severity",
+            "low",
+            "unknown"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_004",
+        "image_paths": "images/sample/case_003/img_1.jpg;images/sample/case_003/img_2.jpg",
+        "diffs": [
+          [
+            "risk_flags",
+            "none",
+            "claim_mismatch"
+          ],
+          [
+            "claim_status",
+            "supported",
+            "contradicted"
+          ],
+          [
+            "severity",
+            "medium",
+            "high"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_007",
+        "image_paths": "images/sample/case_004/img_1.jpg",
+        "diffs": [
+          [
+            "issue_type",
+            "broken_part",
+            "crack"
+          ],
+          [
+            "severity",
+            "medium",
+            "high"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_005",
+        "image_paths": "images/sample/case_005/img_1.jpg;images/sample/case_005/img_2.jpg",
+        "diffs": [
+          [
+            "risk_flags",
+            "claim_mismatch;user_history_risk;manual_review_required",
+            "claim_mismatch;wrong_object_part;user_history_risk;manual_review_required"
+          ],
+          [
+            "issue_type",
+            "scratch",
+            "dent"
+          ],
+          [
+            "supporting_image_ids",
+            "img_1",
+            "img_2"
+          ],
+          [
+            "severity",
+            "low",
+            "none"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_006",
+        "image_paths": "images/sample/case_006/img_1.jpg",
+        "diffs": [
+          [
+            "risk_flags",
+            "wrong_angle;damage_not_visible",
+            "wrong_angle;wrong_object_part;damage_not_visible;low_light_or_glare"
+          ],
+          [
+            "issue_type",
+            "unknown",
+            "crack"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_003",
+        "image_paths": "images/sample/case_007/img_1.jpg;images/sample/case_007/img_2.jpg",
+        "diffs": [
+          [
+            "risk_flags",
+            "blurry_image",
+            "blurry_image;claim_mismatch"
+          ],
+          [
+            "severity",
+            "medium",
+            "high"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_008",
+        "image_paths": "images/sample/case_008/img_1.jpg",
+        "diffs": [
+          [
+            "evidence_standard_met",
+            "true",
+            false
+          ],
+          [
+            "risk_flags",
+            "claim_mismatch;non_original_image;user_history_risk;manual_review_required",
+            "non_original_image;claim_mismatch;possible_manipulation;user_history_risk;manual_review_required"
+          ],
+          [
+            "issue_type",
+            "broken_part",
+            "scratch"
+          ],
+          [
+            "object_part",
+            "front_bumper",
+            "hood"
+          ],
+          [
+            "claim_status",
+            "contradicted",
+            "not_enough_information"
+          ],
+          [
+            "supporting_image_ids",
+            "img_1",
+            "none"
+          ],
+          [
+            "severity",
+            "high",
+            "unknown"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_009",
+        "image_paths": "images/sample/case_009/img_1.jpg",
+        "diffs": [
+          [
+            "issue_type",
+            "crack",
+            "glass_shatter"
+          ],
+          [
+            "severity",
+            "medium",
+            "high"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_010",
+        "image_paths": "images/sample/case_010/img_1.jpg;images/sample/case_010/img_2.jpg",
+        "diffs": [
+          [
+            "risk_flags",
+            "none",
+            "claim_mismatch"
+          ],
+          [
+            "severity",
+            "medium",
+            "high"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_011",
+        "image_paths": "images/sample/case_011/img_1.jpg",
+        "diffs": [
+          [
+            "issue_type",
+            "stain",
+            "water_damage"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_012",
+        "image_paths": "images/sample/case_012/img_1.jpg;images/sample/case_012/img_2.jpg",
+        "diffs": [
+          [
+            "risk_flags",
+            "none",
+            "low_light_or_glare;user_history_risk"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_018",
+        "image_paths": "images/sample/case_013/img_1.jpg",
+        "diffs": [
+          [
+            "risk_flags",
+            "none",
+            "low_light_or_glare"
+          ],
+          [
+            "issue_type",
+            "crack",
+            "glass_shatter"
+          ],
+          [
+            "severity",
+            "medium",
+            "high"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_020",
+        "image_paths": "images/sample/case_014/img_1.jpg",
+        "diffs": [
+          [
+            "risk_flags",
+            "damage_not_visible;user_history_risk;manual_review_required",
+            "text_instruction_present;possible_manipulation;user_history_risk"
+          ],
+          [
+            "issue_type",
+            "none",
+            "dent"
+          ],
+          [
+            "claim_status",
+            "contradicted",
+            "not_enough_information"
+          ],
+          [
+            "severity",
+            "none",
+            "unknown"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_030",
+        "image_paths": "images/sample/case_016/img_1.jpg;images/sample/case_016/img_2.jpg",
+        "diffs": [
+          [
+            "risk_flags",
+            "none",
+            "claim_mismatch"
+          ],
+          [
+            "object_part",
+            "seal",
+            "package_side"
+          ],
+          [
+            "severity",
+            "medium",
+            "high"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_031",
+        "image_paths": "images/sample/case_017/img_1.jpg",
+        "diffs": [
+          [
+            "severity",
+            "medium",
+            "high"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_032",
+        "image_paths": "images/sample/case_018/img_1.jpg;images/sample/case_018/img_2.jpg",
+        "diffs": [
+          [
+            "risk_flags",
+            "cropped_or_obstructed;damage_not_visible;manual_review_required",
+            "damage_not_visible;cropped_or_obstructed;user_history_risk;manual_review_required"
+          ],
+          [
+            "issue_type",
+            "unknown",
+            "missing_part"
+          ],
+          [
+            "supporting_image_ids",
+            "none",
+            "img_1"
+          ],
+          [
+            "valid_image",
+            "false",
+            true
+          ]
+        ]
+      },
+      {
+        "user_id": "user_033",
+        "image_paths": "images/sample/case_019/img_1.jpg",
+        "diffs": [
+          [
+            "evidence_standard_met",
+            "true",
+            false
+          ],
+          [
+            "risk_flags",
+            "wrong_object;claim_mismatch;user_history_risk;manual_review_required",
+            "wrong_object;user_history_risk;manual_review_required"
+          ],
+          [
+            "issue_type",
+            "unknown",
+            "crushed_packaging"
+          ],
+          [
+            "object_part",
+            "unknown",
+            "box"
+          ],
+          [
+            "claim_status",
+            "contradicted",
+            "not_enough_information"
+          ],
+          [
+            "supporting_image_ids",
+            "img_1",
+            "none"
+          ],
+          [
+            "valid_image",
+            "true",
+            false
+          ],
+          [
+            "severity",
+            "low",
+            "unknown"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_034",
+        "image_paths": "images/sample/case_020/img_1.jpg;images/sample/case_020/img_2.jpg",
+        "diffs": [
+          [
+            "evidence_standard_met",
+            "true",
+            false
+          ],
+          [
+            "risk_flags",
+            "damage_not_visible;text_instruction_present;user_history_risk;manual_review_required",
+            "text_instruction_present;non_original_image;possible_manipulation;user_history_risk;manual_review_required"
+          ],
+          [
+            "issue_type",
+            "none",
+            "torn_packaging"
+          ],
+          [
+            "claim_status",
+            "contradicted",
+            "not_enough_information"
+          ],
+          [
+            "supporting_image_ids",
+            "img_1;img_2",
+            "none"
+          ],
+          [
+            "valid_image",
+            "true",
+            false
+          ],
+          [
+            "severity",
+            "none",
+            "unknown"
+          ]
+        ]
+      }
+    ],
+    "elapsed_seconds": 148.4,
+    "seconds_per_claim": 7.42,
+    "usage": {
+      "total_claims": 20,
+      "total_calls": 20,
+      "total_input_tokens": 45693,
+      "total_output_tokens": 5731,
+      "avg_calls_per_claim": 1.0
+    }
+  },
+  "claude-haiku-4-5-20251001": {
+    "n": 20,
+    "claim_status_accuracy": 0.55,
+    "per_field_accuracy": {
+      "evidence_standard_met": 0.6,
+      "risk_flags": 0.35,
+      "issue_type": 0.4,
+      "object_part": 0.85,
+      "claim_status": 0.55,
+      "supporting_image_ids": 0.6,
+      "valid_image": 0.85,
+      "severity": 0.35
+    },
+    "mismatches": [
+      {
+        "user_id": "user_001",
+        "image_paths": "images/sample/case_001/img_1.jpg",
+        "diffs": [
+          [
+            "evidence_standard_met",
+            "true",
+            false
+          ],
+          [
+            "risk_flags",
+            "none",
+            "claim_mismatch;manual_review_required"
+          ],
+          [
+            "issue_type",
+            "dent",
+            "crushed_packaging"
+          ],
+          [
+            "claim_status",
+            "supported",
+            "contradicted"
+          ],
+          [
+            "severity",
+            "medium",
+            "high"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_002",
+        "image_paths": "images/sample/case_002/img_1.jpg;images/sample/case_002/img_2.jpg",
+        "diffs": [
+          [
+            "evidence_standard_met",
+            "true",
+            false
+          ],
+          [
+            "risk_flags",
+            "none",
+            "claim_mismatch;wrong_object_part"
+          ],
+          [
+            "claim_status",
+            "supported",
+            "not_enough_information"
+          ],
+          [
+            "severity",
+            "low",
+            "unknown"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_004",
+        "image_paths": "images/sample/case_003/img_1.jpg;images/sample/case_003/img_2.jpg",
+        "diffs": [
+          [
+            "severity",
+            "medium",
+            "high"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_007",
+        "image_paths": "images/sample/case_004/img_1.jpg",
+        "diffs": [
+          [
+            "issue_type",
+            "broken_part",
+            "glass_shatter"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_005",
+        "image_paths": "images/sample/case_005/img_1.jpg;images/sample/case_005/img_2.jpg",
+        "diffs": [
+          [
+            "risk_flags",
+            "claim_mismatch;user_history_risk;manual_review_required",
+            "user_history_risk;claim_mismatch"
+          ],
+          [
+            "issue_type",
+            "scratch",
+            "dent"
+          ],
+          [
+            "supporting_image_ids",
+            "img_1",
+            "img_2"
+          ],
+          [
+            "severity",
+            "low",
+            "none"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_006",
+        "image_paths": "images/sample/case_006/img_1.jpg",
+        "diffs": [
+          [
+            "risk_flags",
+            "wrong_angle;damage_not_visible",
+            "wrong_angle;damage_not_visible;low_light_or_glare"
+          ],
+          [
+            "issue_type",
+            "unknown",
+            "crack"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_003",
+        "image_paths": "images/sample/case_007/img_1.jpg;images/sample/case_007/img_2.jpg",
+        "diffs": [
+          [
+            "risk_flags",
+            "blurry_image",
+            "none"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_008",
+        "image_paths": "images/sample/case_008/img_1.jpg",
+        "diffs": [
+          [
+            "evidence_standard_met",
+            "true",
+            false
+          ],
+          [
+            "risk_flags",
+            "claim_mismatch;non_original_image;user_history_risk;manual_review_required",
+            "wrong_object;user_history_risk"
+          ],
+          [
+            "issue_type",
+            "broken_part",
+            "scratch"
+          ],
+          [
+            "object_part",
+            "front_bumper",
+            "hood"
+          ],
+          [
+            "claim_status",
+            "contradicted",
+            "not_enough_information"
+          ],
+          [
+            "supporting_image_ids",
+            "img_1",
+            "none"
+          ],
+          [
+            "severity",
+            "high",
+            "unknown"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_009",
+        "image_paths": "images/sample/case_009/img_1.jpg",
+        "diffs": [
+          [
+            "issue_type",
+            "crack",
+            "glass_shatter"
+          ],
+          [
+            "severity",
+            "medium",
+            "high"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_010",
+        "image_paths": "images/sample/case_010/img_1.jpg;images/sample/case_010/img_2.jpg",
+        "diffs": [
+          [
+            "evidence_standard_met",
+            "true",
+            false
+          ],
+          [
+            "risk_flags",
+            "none",
+            "wrong_angle;cropped_or_obstructed;damage_not_visible"
+          ],
+          [
+            "claim_status",
+            "supported",
+            "not_enough_information"
+          ],
+          [
+            "supporting_image_ids",
+            "img_1",
+            "none"
+          ],
+          [
+            "severity",
+            "medium",
+            "unknown"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_011",
+        "image_paths": "images/sample/case_011/img_1.jpg",
+        "diffs": [
+          [
+            "issue_type",
+            "stain",
+            "water_damage"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_012",
+        "image_paths": "images/sample/case_012/img_1.jpg;images/sample/case_012/img_2.jpg",
+        "diffs": [
+          [
+            "evidence_standard_met",
+            "true",
+            false
+          ],
+          [
+            "risk_flags",
+            "none",
+            "blurry_image;cropped_or_obstructed;low_light_or_glare;damage_not_visible;user_history_risk"
+          ],
+          [
+            "claim_status",
+            "supported",
+            "not_enough_information"
+          ],
+          [
+            "supporting_image_ids",
+            "img_2",
+            "none"
+          ],
+          [
+            "severity",
+            "low",
+            "unknown"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_018",
+        "image_paths": "images/sample/case_013/img_1.jpg",
+        "diffs": [
+          [
+            "issue_type",
+            "crack",
+            "glass_shatter"
+          ],
+          [
+            "severity",
+            "medium",
+            "high"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_020",
+        "image_paths": "images/sample/case_014/img_1.jpg",
+        "diffs": [
+          [
+            "evidence_standard_met",
+            "true",
+            false
+          ],
+          [
+            "risk_flags",
+            "damage_not_visible;user_history_risk;manual_review_required",
+            "text_instruction_present;cropped_or_obstructed;damage_not_visible;user_history_risk"
+          ],
+          [
+            "issue_type",
+            "none",
+            "unknown"
+          ],
+          [
+            "claim_status",
+            "contradicted",
+            "not_enough_information"
+          ],
+          [
+            "supporting_image_ids",
+            "img_1",
+            "none"
+          ],
+          [
+            "severity",
+            "none",
+            "unknown"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_031",
+        "image_paths": "images/sample/case_017/img_1.jpg",
+        "diffs": [
+          [
+            "risk_flags",
+            "user_history_risk;manual_review_required",
+            "user_history_risk"
+          ],
+          [
+            "object_part",
+            "package_side",
+            "box"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_032",
+        "image_paths": "images/sample/case_018/img_1.jpg;images/sample/case_018/img_2.jpg",
+        "diffs": [
+          [
+            "risk_flags",
+            "cropped_or_obstructed;damage_not_visible;manual_review_required",
+            "claim_mismatch;user_history_risk"
+          ],
+          [
+            "issue_type",
+            "unknown",
+            "missing_part"
+          ],
+          [
+            "claim_status",
+            "not_enough_information",
+            "contradicted"
+          ],
+          [
+            "supporting_image_ids",
+            "none",
+            "img_1"
+          ],
+          [
+            "valid_image",
+            "false",
+            true
+          ],
+          [
+            "severity",
+            "unknown",
+            "none"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_033",
+        "image_paths": "images/sample/case_019/img_1.jpg",
+        "diffs": [
+          [
+            "evidence_standard_met",
+            "true",
+            false
+          ],
+          [
+            "risk_flags",
+            "wrong_object;claim_mismatch;user_history_risk;manual_review_required",
+            "wrong_object_part;user_history_risk;claim_mismatch"
+          ],
+          [
+            "issue_type",
+            "unknown",
+            "crushed_packaging"
+          ],
+          [
+            "object_part",
+            "unknown",
+            "box"
+          ],
+          [
+            "claim_status",
+            "contradicted",
+            "not_enough_information"
+          ],
+          [
+            "supporting_image_ids",
+            "img_1",
+            "none"
+          ],
+          [
+            "valid_image",
+            "true",
+            false
+          ],
+          [
+            "severity",
+            "low",
+            "unknown"
+          ]
+        ]
+      },
+      {
+        "user_id": "user_034",
+        "image_paths": "images/sample/case_020/img_1.jpg;images/sample/case_020/img_2.jpg",
+        "diffs": [
+          [
+            "evidence_standard_met",
+            "true",
+            false
+          ],
+          [
+            "risk_flags",
+            "damage_not_visible;text_instruction_present;user_history_risk;manual_review_required",
+            "text_instruction_present;non_original_image;possible_manipulation;user_history_risk"
+          ],
+          [
+            "issue_type",
+            "none",
+            "torn_packaging"
+          ],
+          [
+            "claim_status",
+            "contradicted",
+            "not_enough_information"
+          ],
+          [
+            "supporting_image_ids",
+            "img_1;img_2",
+            "none"
+          ],
+          [
+            "valid_image",
+            "true",
+            false
+          ],
+          [
+            "severity",
+            "none",
+            "unknown"
+          ]
+        ]
+      }
+    ],
+    "elapsed_seconds": 79.6,
+    "seconds_per_claim": 3.98,
+    "usage": {
+      "total_claims": 20,
+      "total_calls": 20,
+      "total_input_tokens": 45673,
+      "total_output_tokens": 5327,
+      "avg_calls_per_claim": 1.0
+    }
+  }
+}
